@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO -->
+  <title>Beach View Stays | Serviced Apartments in DHA Karachi</title>
+  <meta name="description" content="Premium serviced 1-bedroom apartments near the beach in DHA Karachi. Fully furnished, secure, Wi-Fi, housekeeping. Book on WhatsApp." />
+  <link rel="canonical" href="https://beachviewstays.pk/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Security (static-site friendly) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; upgrade-insecure-requests" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Beach View Stays | Serviced Apartments in DHA Karachi" />
+  <meta property="og:description" content="Premium serviced 1-bedroom apartments near the beach in DHA Karachi. Book on WhatsApp." />
+  <meta property="og:url" content="https://beachviewstays.pk/" />
+  <meta property="og:image" content="https://beachviewstays.pk/og-home.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Beach View Stays | Serviced Apartments in DHA Karachi" />
+  <meta name="twitter:description" content="Premium serviced apartments near the beach in DHA Karachi. Book on WhatsApp." />
+  <meta name="twitter:image" content="https://beachviewstays.pk/og-home.jpg" />
+
+  <meta name="theme-color" content="#0B1F2A" />
+
+  <style>
+    :root{
+      /* Coastal Luxury */
+      --navy:#0B1F2A;
+      --teal:#0E6F6D;
+      --gold:#C9A24E;
+
+      --bg:#F6F2EA;
+      --surface:#FFFFFF;
+      --border:#E7DDCF;
+
+      --text:#101828;
+      --muted:#475467;
+
+      --shadow: 0 18px 45px rgba(11,31,42,.10);
+      --shadow-soft: 0 10px 26px rgba(11,31,42,.08);
+
+      --radius: 18px;
+      --radius-lg: 26px;
+
+      --container: 1120px;
+      --ease: cubic-bezier(.2,.8,.2,1);
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background: var(--bg);
+      line-height:1.45;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      overflow-x:hidden;
+    }
+    a{ color:inherit; text-decoration:none; }
+    img{ max-width:100%; height:auto; display:block; }
+    .container{ width:min(var(--container), calc(100% - 40px)); margin-inline:auto; }
+
+    body:before{
+      content:"";
+      position:fixed; inset:0;
+      pointer-events:none;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(201,162,78,.10), transparent 45%),
+        radial-gradient(circle at 85% 18%, rgba(14,111,109,.08), transparent 45%),
+        radial-gradient(circle at 55% 110%, rgba(11,31,42,.10), transparent 55%);
+      opacity:.95;
+      z-index:-1;
+    }
+
+    /* Header / Nav */
+    header{
+      position:sticky; top:0; z-index:60;
+      background: rgba(246,242,234,.90);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(231,221,207,.85);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding: 10px 0;
+      gap:12px;
+    }
+    .brand{ display:flex; align-items:center; gap:12px; min-width:0; }
+    .logoMark{
+      width:38px; height:38px; border-radius:14px;
+      background: radial-gradient(circle at 30% 30%, rgba(201,162,78,.35), transparent 55%),
+                  linear-gradient(135deg, var(--navy), #153748);
+      box-shadow: 0 14px 30px rgba(11,31,42,.18);
+      border: 1px solid rgba(255,255,255,.22);
+      position:relative;
+      overflow:hidden;
+      flex:0 0 auto;
+    }
+    .logoMark:after{
+      content:"";
+      position:absolute; inset:-40%;
+      background: radial-gradient(circle, rgba(255,255,255,.25), transparent 60%);
+      transform: rotate(25deg);
+    }
+    .brandText{ min-width:0; }
+    .brand strong{ display:block; letter-spacing:.2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .brand span{ display:block; font-size:12.5px; color:var(--muted); margin-top:1px; }
+
+    nav ul{
+      display:flex; align-items:center; gap:14px;
+      list-style:none; padding:0; margin:0;
+    }
+    nav a{
+      font-weight:900;
+      color: rgba(16,24,40,.9);
+      padding:8px 10px;
+      border-radius:999px;
+      transition: background .2s var(--ease), transform .2s var(--ease);
+      white-space:nowrap;
+    }
+    nav a:hover{ background: rgba(14,111,109,.08); transform: translateY(-1px); }
+    nav a[aria-current="page"]{
+      background: rgba(201,162,78,.14);
+      border: 1px solid rgba(201,162,78,.28);
+    }
+
+    .navRight{ display:flex; align-items:center; gap:10px; }
+
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:11px 14px;
+      border-radius:999px;
+      font-weight:900;
+      border:1px solid transparent;
+      transition: transform .25s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease);
+      will-change: transform;
+      white-space:nowrap;
+      position:relative;
+      overflow:hidden;
+      line-height:1;
+    }
+    .btn:focus{ outline: 3px solid rgba(14,111,109,.18); outline-offset: 2px; }
+    .btn:before{
+      content:"";
+      position:absolute;
+      top:-60%;
+      left:-40%;
+      width:40%;
+      height:220%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent);
+      transform: rotate(20deg) translateX(-120%);
+      transition: transform .6s var(--ease);
+      pointer-events:none;
+    }
+    .btn:hover:before{ transform: rotate(20deg) translateX(420%); }
+
+    .btnPrimary{
+      background: linear-gradient(135deg, var(--navy), #143242);
+      color:#fff;
+      box-shadow: 0 14px 30px rgba(11,31,42,.16);
+    }
+    .btnPrimary:hover{ transform: translateY(-1px); box-shadow: 0 18px 40px rgba(11,31,42,.22); }
+
+    .btnOutline{
+      background: rgba(255,255,255,.78);
+      border-color: rgba(231,221,207,.95);
+      color: var(--navy);
+      box-shadow: 0 10px 24px rgba(11,31,42,.08);
+    }
+    .btnOutline:hover{ transform: translateY(-1px); box-shadow: 0 14px 30px rgba(11,31,42,.12); }
+
+    .btnGold{
+      background: linear-gradient(135deg, rgba(201,162,78,.30), rgba(201,162,78,.14));
+      border-color: rgba(201,162,78,.32);
+      color: var(--navy);
+      box-shadow: 0 10px 24px rgba(11,31,42,.08);
+    }
+    .btnGold:hover{ transform: translateY(-1px); box-shadow: 0 16px 34px rgba(11,31,42,.12); }
+
+    .icon{ width:18px; height:18px; flex:0 0 auto; }
+
+    .menuBtn{
+      display:none;
+      width:44px; height:44px;
+      border-radius:14px;
+      border:1px solid rgba(231,221,207,.95);
+      background: rgba(255,255,255,.74);
+      align-items:center; justify-content:center;
+      box-shadow: 0 10px 24px rgba(11,31,42,.08);
+      transition: transform .25s var(--ease);
+    }
+    .menuBtn:hover{ transform: translateY(-1px); }
+    .menuBtn svg{ width:20px; height:20px; }
+
+    .mobilePanel{ padding: 0 0 14px; }
+    .mobilePanelInner{
+      border:1px solid rgba(231,221,207,.95);
+      background: rgba(255,255,255,.80);
+      border-radius: var(--radius);
+      padding: 10px;
+      box-shadow: var(--shadow-soft);
+      overflow:hidden;
+      transform-origin: top;
+      transform: translateY(-6px) scaleY(.98);
+      opacity: 0;
+      max-height: 0;
+      transition: max-height .35s var(--ease), opacity .25s var(--ease), transform .35s var(--ease);
+    }
+    .mobilePanel.open .mobilePanelInner{
+      opacity: 1;
+      transform: translateY(0) scaleY(1);
+      max-height: 520px;
+    }
+    .mobilePanel a{
+      display:block;
+      padding:12px 12px;
+      border-radius: 14px;
+      font-weight:900;
+      color: rgba(16,24,40,.92);
+    }
+    .mobilePanel a:hover{ background: rgba(14,111,109,.08); }
+
+    /* Main */
+    main{ padding: 18px 0 34px; }
+    .hero{ padding: 10px 0 18px; }
+    .heroWrap{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(231,221,207,.95);
+      background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(255,255,255,.86));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .heroWrap:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(circle at 14% 22%, rgba(14,111,109,.14), transparent 52%),
+        radial-gradient(circle at 86% 18%, rgba(201,162,78,.18), transparent 55%),
+        radial-gradient(circle at 52% 120%, rgba(11,31,42,.12), transparent 55%);
+      pointer-events:none;
+    }
+    .heroGrid{
+      position:relative;
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 14px;
+      padding: 18px;
+      align-items:stretch;
+    }
+
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      font-weight:900;
+      color: var(--navy);
+      letter-spacing: .2px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(14,111,109,.08);
+      border: 1px solid rgba(14,111,109,.14);
+      width: fit-content;
+      margin-bottom: 12px;
+    }
+    .kicker .dot{
+      width:9px; height:9px; border-radius:99px;
+      background: var(--teal);
+      box-shadow: 0 0 0 6px rgba(14,111,109,.10);
+    }
+    h1{
+      margin:0;
+      font-size: clamp(30px, 3.2vw, 46px);
+      line-height: 1.06;
+      letter-spacing: -0.7px;
+      color: var(--navy);
+    }
+    .sub{
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 800;
+      max-width: 60ch;
+    }
+    .heroActions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top: 14px;
+      align-items:center;
+    }
+    .heroProof{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top: 14px;
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.74);
+      border:1px solid rgba(231,221,207,.95);
+      box-shadow: 0 10px 22px rgba(11,31,42,.06);
+      font-weight: 900;
+      color: rgba(16,24,40,.92);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .pill svg{ width:16px; height:16px; }
+
+    .mediaCard{
+      border-radius: 22px;
+      border: 1px solid rgba(231,221,207,.95);
+      background: rgba(255,255,255,.78);
+      box-shadow: var(--shadow-soft);
+      overflow:hidden;
+      position:relative;
+      min-height: 280px;
+      transform: translateZ(0);
+    }
+    .mediaCard:before{
+      content:"";
+      position:absolute; inset:0;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(201,162,78,.18), transparent 55%),
+        radial-gradient(circle at 70% 40%, rgba(14,111,109,.12), transparent 58%),
+        linear-gradient(180deg, rgba(11,31,42,.06), rgba(11,31,42,.00));
+      pointer-events:none;
+      z-index:1;
+    }
+    .heroImg{
+      position:absolute; inset:0;
+      width:100%; height:100%;
+      object-fit: cover;
+      filter: saturate(1.05) contrast(1.02);
+      transform: scale(1.02);
+      transition: transform .9s var(--ease);
+    }
+    .mediaCard:hover .heroImg{ transform: scale(1.06); }
+
+    .mediaOverlay{
+      position:absolute;
+      inset:auto 14px 14px 14px;
+      z-index:2;
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(11,31,42,.55);
+      color: rgba(255,255,255,.95);
+      font-weight: 900;
+      font-size: 13px;
+      backdrop-filter: blur(10px);
+    }
+    .badge svg{ width:16px; height:16px; }
+
+    /* Sections */
+    section{ padding: 18px 0; }
+    .sectionHead{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:14px;
+      margin: 6px 0 12px;
+    }
+    .sectionHead h2{
+      margin:0;
+      font-size: 22px;
+      letter-spacing: -.3px;
+      color: var(--navy);
+    }
+    .sectionHead p{
+      margin:0;
+      color: var(--muted);
+      font-weight: 800;
+      max-width: 64ch;
+      font-size: 14px;
+    }
+
+    .grid3{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .card{
+      background: rgba(255,255,255,.88);
+      border: 1px solid rgba(231,221,207,.95);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+      overflow:hidden;
+      transition: transform .25s var(--ease), box-shadow .25s var(--ease);
+      padding: 14px;
+      min-height: 120px;
+    }
+    .card:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 18px 42px rgba(11,31,42,.12);
+    }
+    .cap{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(231,221,207,.95);
+      background: rgba(255,255,255,.78);
+      font-weight: 900;
+      font-size: 12.5px;
+      color: rgba(16,24,40,.92);
+      margin-bottom: 10px;
+    }
+    .cap svg{ width:16px; height:16px; }
+    .card h3{ margin:0 0 6px; color: var(--navy); letter-spacing:-.2px; font-size: 16px; }
+    .card p{ margin:0; color: var(--muted); font-weight: 800; font-size: 14px; }
+
+    .split{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      align-items:stretch;
+    }
+    .panel{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(231,221,207,.95);
+      background:
+        radial-gradient(circle at 12% 18%, rgba(14,111,109,.14), transparent 55%),
+        radial-gradient(circle at 86% 26%, rgba(201,162,78,.16), transparent 55%),
+        linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.84));
+      box-shadow: var(--shadow);
+      padding: 16px;
+      transition: transform .25s var(--ease), box-shadow .25s var(--ease);
+    }
+    .panel:hover{ transform: translateY(-2px); box-shadow: 0 24px 60px rgba(11,31,42,.14); }
+    .panel h3{ margin:0 0 10px; color: var(--navy); letter-spacing:-.2px; font-size: 17px; }
+
+    .bullets{
+      margin: 0;
+      padding:0;
+      list-style:none;
+      display:grid;
+      gap:10px;
+    }
+    .bullets li{
+      display:flex; gap:10px; align-items:flex-start;
+      padding: 12px 12px;
+      border-radius: 16px;
+      border:1px solid rgba(231,221,207,.95);
+      background: rgba(255,255,255,.78);
+      box-shadow: 0 10px 22px rgba(11,31,42,.06);
+      font-weight: 800;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .check{
+      width:22px; height:22px; border-radius: 8px;
+      background: rgba(14,111,109,.10);
+      border:1px solid rgba(14,111,109,.16);
+      display:flex; align-items:center; justify-content:center;
+      flex:0 0 auto;
+      margin-top:1px;
+    }
+    .check svg{ width:14px; height:14px; }
+
+    .chips{ display:flex; flex-wrap:wrap; gap:8px; }
+    .chip{
+      border: 1px solid rgba(231,221,207,.95);
+      background: rgba(255,255,255,.78);
+      color: rgba(16,24,40,.92);
+      font-weight: 900;
+      font-size: 13px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      box-shadow: 0 10px 22px rgba(11,31,42,.06);
+      white-space: nowrap;
+    }
+
+    .ctaBand{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(231,221,207,.95);
+      background:
+        radial-gradient(circle at 12% 18%, rgba(14,111,109,.16), transparent 55%),
+        radial-gradient(circle at 86% 26%, rgba(201,162,78,.18), transparent 55%),
+        linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.84));
+      box-shadow: var(--shadow);
+      padding: 16px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      flex-wrap:wrap;
+    }
+    .ctaBand h3{ margin:0; color: var(--navy); letter-spacing:-.2px; font-size: 18px; }
+    .ctaBand p{ margin: 6px 0 0; color: var(--muted); font-weight:800; font-size: 14px; }
+
+    /* Footer */
+    footer{
+      margin-top: 26px;
+      background: linear-gradient(180deg, rgba(11,31,42,.06), rgba(11,31,42,.00));
+      border-top: 1px solid rgba(231,221,207,.9);
+      padding: 30px 0;
+    }
+    .footGrid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr .8fr;
+      gap: 14px;
+      align-items:start;
+    }
+    .foot h4{ margin:0 0 10px; color: var(--navy); letter-spacing:-.2px; }
+    .foot p, .foot a{ color: var(--muted); font-size: 14.5px; font-weight: 700; }
+    .foot a:hover{ color: var(--navy); }
+    .foot ul{ list-style:none; padding:0; margin:0; display:grid; gap:8px; }
+    .copyright{
+      margin-top: 14px;
+      color: rgba(71,84,103,.9);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* Floating WhatsApp */
+    .waFloat{
+      position:fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 70;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .waBubble{
+      display:block;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.92);
+      border:1px solid rgba(231,221,207,.95);
+      box-shadow: 0 16px 34px rgba(11,31,42,.12);
+      color: var(--navy);
+      font-weight:900;
+      font-size: 13px;
+      white-space:nowrap;
+      transform: translateY(0);
+      transition: transform .25s var(--ease);
+    }
+    .waBtn{
+      width: 56px; height:56px;
+      border-radius: 20px;
+      display:flex; align-items:center; justify-content:center;
+      background: linear-gradient(135deg, rgba(201,162,78,.35), rgba(201,162,78,.14));
+      border: 1px solid rgba(201,162,78,.32);
+      box-shadow: 0 18px 40px rgba(11,31,42,.16);
+      transition: transform .25s var(--ease), box-shadow .25s var(--ease);
+      position:relative;
+    }
+    .waBtn:after{
+      content:"";
+      position:absolute;
+      inset:-8px;
+      border-radius: 24px;
+      border: 2px solid rgba(201,162,78,.25);
+      opacity:.0;
+      transform: scale(.95);
+      animation: pulse 2.2s var(--ease) infinite;
+      pointer-events:none;
+    }
+    .waBtn:hover{ transform: translateY(-2px); box-shadow: 0 22px 50px rgba(11,31,42,.22); }
+    .waBtn:hover + .waBubble{ transform: translateY(-2px); }
+    .waBtn svg{ width:24px; height:24px; }
+
+    @keyframes pulse{
+      0%{ opacity:0; transform: scale(.92); }
+      15%{ opacity:.75; }
+      55%{ opacity:0; transform: scale(1.06); }
+      100%{ opacity:0; transform: scale(1.06); }
+    }
+
+    /* Reveal */
+    .reveal{
+      opacity:0;
+      transform: translateY(14px);
+      transition: opacity .6s var(--ease), transform .6s var(--ease);
+      will-change: opacity, transform;
+    }
+    .reveal.in{ opacity:1; transform: translateY(0); }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .heroGrid{ grid-template-columns: 1fr; }
+      .grid3{ grid-template-columns: 1fr; }
+      .split{ grid-template-columns: 1fr; }
+      .footGrid{ grid-template-columns: 1fr; }
+    }
+    @media (max-width: 860px){
+      .container{ width: calc(100% - 28px); }
+      nav ul{ display:none; }
+      .menuBtn{ display:inline-flex; }
+      .brand span{ display:none; }
+    }
+    @media (max-width: 520px){
+      .heroActions .btn{ width:100%; }
+      .ctaBand .btn{ width:100%; }
+      .waBubble{ display:none; }
+    }
+    @media (prefers-reduced-motion: reduce){
+      *{ scroll-behavior:auto !important; }
+      .reveal{ transition:none; transform:none; opacity:1; }
+      .btn, .waBtn, nav a, .card, .panel, .heroImg{ transition:none; }
+      .waBtn:after{ animation:none; }
+    }
+  </style>
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LodgingBusiness",
+    "name":"Beach View Stays",
+    "url":"https://beachviewstays.pk/",
+    "telephone":"+923068230101",
+    "email":"karachi.apartments@gmail.com",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"DHA",
+      "addressRegion":"Karachi",
+      "addressCountry":"PK"
+    },
+    "numberOfRooms":"5"
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Beach View Stays Home">
+          <div class="logoMark" aria-hidden="true"></div>
+          <div class="brandText">
+            <strong>Beach View Stays</strong>
+            <span>Relax. Stay. Enjoy the View.</span>
+          </div>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="navRight">
+          <a class="btn btnOutline" href="contact.html" aria-label="Check availability">Check Availability</a>
+          <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 8h16v2H4zm0-4h16v2H4z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobilePanel" id="mobilePanel" aria-hidden="true">
+        <div class="mobilePanelInner">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="contact.html">Contact</a>
+          <div style="padding:10px;">
+            <a class="btn btnPrimary" style="width:100%;" href="contact.html">Check Availability</a>
+            <div style="height:10px;"></div>
+            <a class="btn btnGold" style="width:100%;" href="https://wa.me/923068230101" target="_blank" rel="noopener noreferrer">
+              WhatsApp Booking
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="heroWrap reveal" data-delay="0">
+          <div class="heroGrid">
+            <div>
+              <div class="kicker"><span class="dot" aria-hidden="true"></span> DHA Karachi • Near beach</div>
+              <h1>Relax. Stay.<br/>Enjoy the View.</h1>
+
+              <p class="sub">
+                Premium serviced <strong>1-bedroom</strong> apartments — clean, private, fully furnished.
+              </p>
+
+              <div class="heroActions">
+                <a class="btn btnPrimary" href="contact.html">Check availability</a>
+                <a class="btn btnGold" href="https://wa.me/923068230101" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M20.5 3.5A11 11 0 0 0 3.7 17.7L3 21l3.4-.7A11 11 0 0 0 20.5 3.5ZM12 20a9 9 0 0 1-4.6-1.3l-.3-.2-2 .4.4-2-.2-.3A9 9 0 1 1 12 20Zm5.2-6.7c-.3-.1-1.7-.8-2-.9s-.5-.1-.7.1-.8.9-1 .9-.4.1-.7 0a7.4 7.4 0 0 1-2.2-1.4A8.2 8.2 0 0 1 9 9.9c-.1-.3 0-.5.1-.6l.5-.6c.1-.2.1-.4 0-.6l-.9-2.1c-.1-.3-.3-.3-.5-.3h-.5c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.8 1.2 3.2 1.4 3.4 2.4 3.7 5.8 5.2c.8.3 1.4.5 1.9.6.8.2 1.6.2 2.2.1.7-.1 1.7-.7 1.9-1.4s.2-1.3.1-1.4c0-.2-.3-.3-.6-.4Z"/>
+                  </svg>
+                  WhatsApp booking
+                </a>
+              </div>
+
+              <div class="heroProof">
+                <span class="pill">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 21h10a2 2 0 0 0 2-2V9l-7-6-7 6v10a2 2 0 0 0 2 2Z"/></svg>
+                  5 units
+                </span>
+                <span class="pill">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 6h16v12H4z"/></svg>
+                  Wi-Fi • Smart TV
+                </span>
+                <span class="pill">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 2 7v6c0 5 3.8 9.4 10 11 6.2-1.6 10-6 10-11V7L12 2Z"/></svg>
+                  Secure
+                </span>
+              </div>
+            </div>
+
+            <div class="mediaCard" aria-label="Property preview">
+              <img class="heroImg" loading="lazy" src="assets/hero.jpg" alt="Beach View Stays apartment preview" />
+              <div class="mediaOverlay">
+                <span class="badge">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16 2H8v2H5v2h14V4h-3V2Zm-9 8h10v10H7V10Zm2 2v6h6v-6H9Z"/></svg>
+                  Clean & serviced
+                </span>
+                <span class="badge">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+                  DHA • near beach
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 KEY CARDS -->
+    <section>
+      <div class="container">
+        <div class="grid3">
+          <div class="card reveal" data-delay="0">
+            <div class="cap">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16 2H8v2H5v2h14V4h-3V2Zm-9 8h10v10H7V10Z"/></svg>
+              Housekeeping
+            </div>
+            <h3>Hotel-level cleanliness</h3>
+            <p>Serviced, fresh, ready.</p>
+          </div>
+
+          <div class="card reveal" data-delay="90">
+            <div class="cap">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 21h10a2 2 0 0 0 2-2V9l-7-6-7 6v10a2 2 0 0 0 2 2Z"/></svg>
+              Fully furnished
+            </div>
+            <h3>1-bedroom comfort</h3>
+            <p>Bedroom • lounge • kitchen.</p>
+          </div>
+
+          <div class="card reveal" data-delay="180">
+            <div class="cap">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 2 7v6c0 5 3.8 9.4 10 11 6.2-1.6 10-6 10-11V7L12 2Z"/></svg>
+              Safe stay
+            </div>
+            <h3>Secure & calm</h3>
+            <p>Peaceful, guest-friendly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES (SHORT) -->
+    <section>
+      <div class="container">
+        <div class="split">
+          <div class="panel reveal" data-delay="0">
+            <h3>Included</h3>
+            <ul class="bullets">
+              <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9.2 16.6 4.8 12.2l1.4-1.4 3 3 8.6-8.6 1.4 1.4-10 10Z"/></svg></span>AC • Smart TV • Wi-Fi</li>
+              <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9.2 16.6 4.8 12.2l1.4-1.4 3 3 8.6-8.6 1.4 1.4-10 10Z"/></svg></span>Kitchen / kitchenette</li>
+              <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9.2 16.6 4.8 12.2l1.4-1.4 3 3 8.6-8.6 1.4 1.4-10 10Z"/></svg></span>24/7 sweet water • geyser</li>
+            </ul>
+          </div>
+
+          <div class="panel reveal" data-delay="120">
+            <h3>Amenities</h3>
+            <div class="chips">
+              <span class="chip">Refrigerator</span>
+              <span class="chip">Microwave</span>
+              <span class="chip">Electric kettle</span>
+              <span class="chip">Housekeeping</span>
+              <span class="chip">Secure access</span>
+            </div>
+
+            <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn btnPrimary" href="facilities.html">Facilities</a>
+              <a class="btn btnOutline" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section>
+      <div class="container">
+        <div class="ctaBand reveal" data-delay="0">
+          <div>
+            <h3>Book fast on WhatsApp</h3>
+            <p>Send dates + guests.</p>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btnPrimary" href="contact.html">Check availability</a>
+            <a class="btn btnGold" href="https://wa.me/923068230101" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footGrid">
+        <div class="foot">
+          <h4>Beach View Stays</h4>
+          <p>Serviced 1-bedroom apartments in DHA Karachi.</p>
+          <p style="margin-top:10px;">
+            <strong style="color:var(--navy);">Email:</strong> <a href="mailto:karachi.apartments@gmail.com">karachi.apartments@gmail.com</a><br/>
+            <strong style="color:var(--navy);">WhatsApp:</strong> <a href="https://wa.me/923068230101" target="_blank" rel="noopener noreferrer">+92 306 8230101</a>
+          </p>
+        </div>
+
+        <div class="foot">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="foot">
+          <h4>Location</h4>
+          <p>DHA, Karachi • near beach</p>
+          <p style="margin-top:10px;">
+            <a href="#" aria-label="Facebook">Facebook</a> •
+            <a href="#" aria-label="Instagram">Instagram</a> •
+            <a href="#" aria-label="Google Maps">Maps</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="copyright">
+        © <span id="year"></span> Beach View Stays • https://beachviewstays.pk
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <div class="waFloat" aria-label="WhatsApp quick booking">
+    <a class="waBtn" href="https://wa.me/923068230101" target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp booking">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="var(--navy)" d="M20.5 3.5A11 11 0 0 0 3.7 17.7L3 21l3.4-.7A11 11 0 0 0 20.5 3.5ZM12 20a9 9 0 0 1-4.6-1.3l-.3-.2-2 .4.4-2-.2-.3A9 9 0 1 1 12 20Zm5.2-6.7c-.3-.1-1.7-.8-2-.9s-.5-.1-.7.1-.8.9-1 .9-.4.1-.7 0a7.4 7.4 0 0 1-2.2-1.4A8.2 8.2 0 0 1 9 9.9c-.1-.3 0-.5.1-.6l.5-.6c.1-.2.1-.4 0-.6l-.9-2.1c-.1-.3-.3-.3-.5-.3h-.5c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.8 1.2 3.2 1.4 3.4 2.4 3.7 5.8 5.2c.8.3 1.4.5 1.9.6.8.2 1.6.2 2.2.1.7-.1 1.7-.7 1.9-1.4s.2-1.3.1-1.4c0-.2-.3-.3-.6-.4Z"/>
+      </svg>
+    </a>
+    <div class="waBubble">WhatsApp</div>
+  </div>
+
+  <script>
+    (function(){
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Mobile menu
+      const btn = document.getElementById('menuBtn');
+      const panel = document.getElementById('mobilePanel');
+      if(btn && panel){
+        panel.classList.remove('open');
+        const close = () => {
+          btn.setAttribute('aria-expanded','false');
+          panel.classList.remove('open');
+          panel.setAttribute('aria-hidden','true');
+        };
+        btn.addEventListener('click', () => {
+          const open = panel.classList.contains('open');
+          if(open) close();
+          else{
+            btn.setAttribute('aria-expanded','true');
+            panel.classList.add('open');
+            panel.setAttribute('aria-hidden','false');
+          }
+        });
+        document.addEventListener('click', (e) => {
+          if(!panel.classList.contains('open')) return;
+          const within = panel.contains(e.target) || btn.contains(e.target);
+          if(!within) close();
+        });
+        window.addEventListener('resize', () => { if(window.innerWidth > 860) close(); });
+      }
+
+      // Reveal
+      const els = Array.from(document.querySelectorAll('.reveal'));
+      if(reduce){
+        els.forEach(el => el.classList.add('in'));
+      } else {
+        els.forEach(el => {
+          const d = el.getAttribute('data-delay');
+          if(d) el.style.transitionDelay = (parseInt(d,10) || 0) + 'ms';
+        });
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if(entry.isIntersecting){
+              entry.target.classList.add('in');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        els.forEach(el => io.observe(el));
+      }
+
+      // Hero image fallback if assets/hero.jpg missing
+      const heroImg = document.querySelector('.heroImg');
+      const placeholder = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(
+        `<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900">
+          <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0B1F2A" stop-opacity="0.22"/>
+            <stop offset="1" stop-color="#C9A24E" stop-opacity="0.18"/>
+          </linearGradient></defs>
+          <rect width="100%" height="100%" fill="url(#g)"/>
+          <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle"
+            font-family="system-ui, -apple-system, Segoe UI, Roboto" font-size="32" fill="#0B1F2A" opacity="0.62">
+            Add image: assets/hero.jpg
+          </text>
+        </svg>`
+      );
+      if(heroImg){
+        heroImg.addEventListener('error', ()=>{ heroImg.src = placeholder; }, { once:true });
+      }
+    })();
+  </script>
+</body>
+</html>
