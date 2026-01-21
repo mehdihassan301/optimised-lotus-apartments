@@ -1,0 +1,1037 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO -->
+  <title>Contact & Booking | Beach View Stays - DHA Karachi Serviced Apartments</title>
+  <meta name="description" content="Contact Beach View Stays for availability and bookings. Use the quick form to send check-in/check-out dates and guest details directly to WhatsApp." />
+  <link rel="canonical" href="https://beachviewstays.pk/contact" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact & Booking | Beach View Stays" />
+  <meta property="og:description" content="Send your dates and guest details. We’ll confirm availability and rates on WhatsApp." />
+  <meta property="og:url" content="https://beachviewstays.pk/contact" />
+  <meta property="og:image" content="https://beachviewstays.pk/og-contact.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact & Booking | Beach View Stays" />
+  <meta name="twitter:description" content="Send your dates and guest details. We’ll confirm availability and rates on WhatsApp." />
+  <meta name="twitter:image" content="https://beachviewstays.pk/og-contact.jpg" />
+
+  <meta name="theme-color" content="#0B1F2A" />
+
+  <style>
+    :root{
+      /* Coastal Luxury (hospitality) */
+      --navy:#0B1F2A;
+      --teal:#0E6F6D;
+      --gold:#C9A24E;
+
+      --bg:#F6F2EA;
+      --surface:#FFFFFF;
+      --border:#E7DDCF;
+
+      --text:#101828;
+      --muted:#475467;
+
+      --shadow: 0 18px 45px rgba(11,31,42,.10);
+      --shadow-soft: 0 10px 26px rgba(11,31,42,.08);
+
+      --radius: 18px;
+      --radius-lg: 26px;
+
+      --container: 1100px;
+      --ease: cubic-bezier(.2,.8,.2,1);
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background: var(--bg);
+      line-height:1.45;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      overflow-x:hidden;
+    }
+
+    a{ color:inherit; text-decoration:none; }
+    .container{ width:min(var(--container), calc(100% - 40px)); margin-inline:auto; }
+
+    /* Subtle background glow */
+    body:before{
+      content:"";
+      position:fixed; inset:0;
+      pointer-events:none;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(201,162,78,.10), transparent 45%),
+        radial-gradient(circle at 85% 18%, rgba(14,111,109,.08), transparent 45%),
+        radial-gradient(circle at 55% 110%, rgba(11,31,42,.10), transparent 55%);
+      opacity:.9;
+      z-index:-1;
+    }
+
+    /* Header / Nav */
+    header{
+      position:sticky; top:0; z-index:50;
+      background: rgba(246,242,234,.88);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(231,221,207,.85);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      min-width: 220px;
+    }
+    .logoMark{
+      width:38px; height:38px; border-radius:14px;
+      background: radial-gradient(circle at 30% 30%, rgba(201,162,78,.35), transparent 55%),
+                  linear-gradient(135deg, var(--navy), #153748);
+      box-shadow: 0 14px 30px rgba(11,31,42,.18);
+      border: 1px solid rgba(255,255,255,.22);
+      position:relative;
+      overflow:hidden;
+    }
+    .logoMark:after{
+      content:"";
+      position:absolute; inset:-40%;
+      background: radial-gradient(circle, rgba(255,255,255,.25), transparent 60%);
+      transform: rotate(25deg);
+    }
+    .brand strong{ display:block; letter-spacing:.2px; }
+    .brand span{ display:block; font-size:12.5px; color:var(--muted); margin-top:1px; }
+
+    nav ul{
+      display:flex; align-items:center; gap:18px;
+      list-style:none; padding:0; margin:0;
+    }
+    nav a{
+      font-weight:800;
+      color: rgba(16,24,40,.92);
+      padding:8px 10px;
+      border-radius:999px;
+      transition: background .2s var(--ease), transform .2s var(--ease);
+    }
+    nav a:hover{
+      background: rgba(14,111,109,.08);
+      transform: translateY(-1px);
+    }
+    nav a[aria-current="page"]{
+      background: rgba(14,111,109,.10);
+      border: 1px solid rgba(14,111,109,.14);
+    }
+
+    .navRight{ display:flex; align-items:center; gap:10px; }
+
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:11px 14px;
+      border-radius:999px;
+      font-weight:900;
+      border:1px solid transparent;
+      transition: transform .25s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease);
+      will-change: transform;
+      white-space:nowrap;
+      position:relative;
+      overflow:hidden;
+    }
+    .btn:focus{ outline: 3px solid rgba(14,111,109,.18); outline-offset: 2px; }
+    .btn:before{
+      content:"";
+      position:absolute;
+      top:-60%;
+      left:-40%;
+      width:40%;
+      height:220%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent);
+      transform: rotate(20deg) translateX(-120%);
+      transition: transform .6s var(--ease);
+      pointer-events:none;
+    }
+    .btn:hover:before{ transform: rotate(20deg) translateX(420%); }
+
+    .btnPrimary{
+      background: linear-gradient(135deg, var(--navy), #143242);
+      color:#fff;
+      box-shadow: 0 14px 30px rgba(11,31,42,.16);
+    }
+    .btnPrimary:hover{ transform: translateY(-1px); box-shadow: 0 18px 40px rgba(11,31,42,.22); }
+    .btnOutline{
+      background: rgba(255,255,255,.72);
+      border-color: rgba(231,221,207,.95);
+      color: var(--navy);
+      box-shadow: 0 10px 24px rgba(11,31,42,.08);
+    }
+    .btnOutline:hover{ transform: translateY(-1px); box-shadow: 0 14px 30px rgba(11,31,42,.12); }
+
+    /* Mobile menu */
+    .menuBtn{
+      display:none;
+      width:44px; height:44px;
+      border-radius:14px;
+      border:1px solid rgba(231,221,207,.95);
+      background: rgba(255,255,255,.74);
+      align-items:center; justify-content:center;
+      box-shadow: 0 10px 24px rgba(11,31,42,.08);
+      transition: transform .25s var(--ease);
+    }
+    .menuBtn:hover{ transform: translateY(-1px); }
+    .menuBtn svg{ width:20px; height:20px; }
+
+    .mobilePanel{ padding: 0 0 16px; }
+    .mobilePanelInner{
+      border:1px solid rgba(231,221,207,.95);
+      background: rgba(255,255,255,.78);
+      border-radius: var(--radius);
+      padding: 10px;
+      box-shadow: var(--shadow-soft);
+      overflow:hidden;
+      transform-origin: top;
+      transform: translateY(-6px) scaleY(.98);
+      opacity: 0;
+      max-height: 0;
+      transition: max-height .35s var(--ease), opacity .25s var(--ease), transform .35s var(--ease);
+    }
+    .mobilePanel.open .mobilePanelInner{
+      opacity: 1;
+      transform: translateY(0) scaleY(1);
+      max-height: 380px;
+    }
+    .mobilePanel a{
+      display:block;
+      padding:12px 12px;
+      border-radius: 14px;
+      font-weight:900;
+      color: rgba(16,24,40,.92);
+    }
+    .mobilePanel a:hover{ background: rgba(14,111,109,.08); }
+
+    /* Page hero */
+    .pageHero{ padding: 26px 0 10px; }
+    .heroCard{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(231,221,207,.95);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+      transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+    }
+    .heroCard:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 24px 60px rgba(11,31,42,.14);
+    }
+    .heroCard::before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(circle at 15% 18%, rgba(201,162,78,.18), transparent 50%),
+        radial-gradient(circle at 82% 20%, rgba(14,111,109,.14), transparent 46%),
+        linear-gradient(180deg, rgba(11,31,42,.06), transparent 45%),
+        radial-gradient(circle at 55% 120%, rgba(11,31,42,.12), transparent 55%);
+      pointer-events:none;
+    }
+    .heroInner{ position:relative; padding: 26px 22px 18px; }
+
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      font-weight:950;
+      color: var(--navy);
+      letter-spacing: .2px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(14,111,109,.08);
+      border: 1px solid rgba(14,111,109,.14);
+      margin-bottom: 10px;
+    }
+    .kicker .dot{
+      width:9px; height:9px; border-radius:99px;
+      background: var(--teal);
+      box-shadow: 0 0 0 6px rgba(14,111,109,.10);
+    }
+
+    h1{
+      margin:0;
+      font-size: clamp(26px, 3vw, 40px);
+      line-height: 1.08;
+      letter-spacing: -0.6px;
+      color: var(--navy);
+    }
+    .sub{
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 70ch;
+    }
+
+    /* Layout */
+    section{ padding: 22px 0; }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 12px;
+      align-items:start;
+    }
+
+    /* Cards/panels */
+    .panel{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(231,221,207,.95);
+      background: rgba(255,255,255,.86);
+      box-shadow: var(--shadow);
+      padding: 16px;
+      transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+    }
+    .panel:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 24px 60px rgba(11,31,42,.14);
+    }
+    .panel h2{
+      margin:0 0 8px;
+      color: var(--navy);
+      letter-spacing:-.2px;
+      font-size: 18px;
+    }
+    .panel p{
+      margin:0;
+      color: var(--muted);
+      font-size: 14.6px;
+    }
+
+    /* Form */
+    form{ margin-top: 12px; }
+    .fields{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .field{ grid-column: span 6; }
+    .field.full{ grid-column: span 12; }
+
+    label{
+      display:block;
+      font-weight:900;
+      color: rgba(16,24,40,.92);
+      font-size: 13px;
+      margin: 0 0 6px;
+    }
+
+    .input{
+      width:100%;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(231,221,207,.95);
+      background: rgba(255,255,255,.92);
+      color: var(--text);
+      box-shadow: 0 10px 22px rgba(11,31,42,.06);
+      outline:none;
+      transition: transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease);
+      font-size: 14.5px;
+    }
+    .input:focus{
+      border-color: rgba(14,111,109,.35);
+      box-shadow: 0 16px 34px rgba(11,31,42,.10);
+      transform: translateY(-1px);
+    }
+    textarea.input{ min-height: 110px; resize: vertical; }
+
+    .hint{
+      margin-top: 8px;
+      color: rgba(71,84,103,.95);
+      font-size: 13.2px;
+    }
+
+    .actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top: 12px;
+      align-items:center;
+    }
+
+    .miniNote{
+      margin-top: 10px;
+      color: rgba(71,84,103,.95);
+      font-size: 13px;
+    }
+
+    /* Contact pills */
+    .pillGrid{
+      display:grid;
+      gap:10px;
+      margin-top: 12px;
+    }
+    .pill{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      padding: 12px 12px;
+      border-radius: 16px;
+      border:1px solid rgba(231,221,207,.95);
+      background: rgba(255,255,255,.78);
+      box-shadow: 0 10px 22px rgba(11,31,42,.06);
+      transition: transform .25s var(--ease), box-shadow .25s var(--ease);
+    }
+    .pill:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 14px 32px rgba(11,31,42,.10);
+    }
+    .iconBox{
+      width:40px; height:40px; border-radius: 16px;
+      background: rgba(14,111,109,.10);
+      border:1px solid rgba(14,111,109,.14);
+      display:flex; align-items:center; justify-content:center;
+      flex:0 0 auto;
+      box-shadow: 0 10px 22px rgba(11,31,42,.06);
+    }
+    .iconBox svg{ width:20px; height:20px; }
+    .pill strong{ display:block; color: var(--navy); font-size: 14.5px; }
+    .pill span{ display:block; color: var(--muted); font-size: 13.8px; margin-top:2px; }
+    .pill a{ color: var(--navy); text-decoration: underline; text-underline-offset: 2px; }
+
+    /* Map placeholder */
+    .mapBox{
+      margin-top: 10px;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(231,221,207,.95);
+      background:
+        radial-gradient(circle at 25% 20%, rgba(14,111,109,.10), transparent 60%),
+        radial-gradient(circle at 85% 35%, rgba(201,162,78,.12), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,.90), rgba(255,255,255,.78));
+      box-shadow: var(--shadow-soft);
+      overflow:hidden;
+      position:relative;
+      min-height: 220px;
+      display:flex;
+      align-items:flex-end;
+    }
+    .mapBadge{
+      margin: 12px;
+      padding: 10px 12px;
+      border-radius: 16px;
+      border:1px solid rgba(231,221,207,.95);
+      background: rgba(255,255,255,.88);
+      box-shadow: 0 10px 22px rgba(11,31,42,.06);
+      max-width: 42ch;
+    }
+    .mapBadge strong{ display:block; color: var(--navy); }
+    .mapBadge span{ display:block; color: var(--muted); font-size: 13.5px; margin-top:2px; }
+
+    /* CTA band */
+    .ctaBand{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(231,221,207,.95);
+      background:
+        radial-gradient(circle at 12% 18%, rgba(14,111,109,.14), transparent 55%),
+        radial-gradient(circle at 86% 26%, rgba(201,162,78,.16), transparent 55%),
+        linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.84));
+      box-shadow: var(--shadow);
+      padding: 18px;
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+      flex-wrap:wrap;
+      margin-top: 10px;
+    }
+    .ctaBand h3{ margin:0; color: var(--navy); letter-spacing:-.2px; }
+    .ctaBand p{ margin: 6px 0 0; color: var(--muted); }
+
+    /* Footer */
+    footer{
+      margin-top: 18px;
+      background: linear-gradient(180deg, rgba(11,31,42,.06), rgba(11,31,42,.00));
+      border-top: 1px solid rgba(231,221,207,.9);
+      padding: 30px 0;
+    }
+    .footGrid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr .8fr;
+      gap: 14px;
+      align-items:start;
+    }
+    .foot h4{ margin:0 0 10px; color: var(--navy); letter-spacing:-.2px; }
+    .foot p, .foot a{ color: var(--muted); font-size: 14.5px; }
+    .foot a:hover{ color: var(--navy); }
+    .foot ul{ list-style:none; padding:0; margin:0; display:grid; gap:8px; }
+    .copyright{
+      margin-top: 14px;
+      color: rgba(71,84,103,.9);
+      font-size: 13px;
+    }
+
+    /* Floating WhatsApp */
+    .waFloat{
+      position:fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 60;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .waBubble{
+      display:block;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.92);
+      border:1px solid rgba(231,221,207,.95);
+      box-shadow: 0 16px 34px rgba(11,31,42,.12);
+      color: var(--navy);
+      font-weight:950;
+      font-size: 13px;
+      white-space:nowrap;
+      transform: translateY(0);
+      transition: transform .25s var(--ease);
+    }
+    .waBtn{
+      width: 56px; height:56px;
+      border-radius: 20px;
+      display:flex; align-items:center; justify-content:center;
+      background: linear-gradient(135deg, rgba(201,162,78,.35), rgba(201,162,78,.14));
+      border: 1px solid rgba(201,162,78,.32);
+      box-shadow: 0 18px 40px rgba(11,31,42,.16);
+      transition: transform .25s var(--ease), box-shadow .25s var(--ease);
+      position:relative;
+    }
+    .waBtn:after{
+      content:"";
+      position:absolute;
+      inset:-8px;
+      border-radius: 24px;
+      border: 2px solid rgba(201,162,78,.25);
+      opacity:.0;
+      transform: scale(.95);
+      animation: pulse 2.2s var(--ease) infinite;
+      pointer-events:none;
+    }
+    .waBtn:hover{ transform: translateY(-2px); box-shadow: 0 22px 50px rgba(11,31,42,.22); }
+    .waBtn:hover + .waBubble{ transform: translateY(-2px); }
+    .waBtn svg{ width:24px; height:24px; }
+
+    @keyframes pulse{
+      0%{ opacity:0; transform: scale(.92); }
+      15%{ opacity:.75; }
+      55%{ opacity:0; transform: scale(1.06); }
+      100%{ opacity:0; transform: scale(1.06); }
+    }
+
+    /* Reveal */
+    .reveal{
+      opacity:0;
+      transform: translateY(14px);
+      transition: opacity .6s var(--ease), transform .6s var(--ease);
+      will-change: opacity, transform;
+    }
+    .reveal.in{
+      opacity:1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .footGrid{ grid-template-columns: 1fr; }
+      .grid{ grid-template-columns: 1fr; }
+    }
+    @media (max-width: 860px){
+      .container{ width: calc(100% - 28px); }
+      nav ul{ display:none; }
+      .menuBtn{ display:inline-flex; }
+      .brand{ min-width:unset; }
+      .heroInner{ padding: 22px 18px 16px; }
+      .btn{ padding: 12px 14px; }
+      .fields{ grid-template-columns: repeat(12, 1fr); }
+    }
+    @media (max-width: 520px){
+      .brand span{ display:none; }
+      .navRight .btnOutline{ display:none; }
+      .field{ grid-column: span 12; }
+      .waBubble{ display:none; }
+      .ctaBand .btn{ width:100%; }
+    }
+    @media (prefers-reduced-motion: reduce){
+      *{ scroll-behavior:auto !important; }
+      .reveal{ transition:none; transform:none; opacity:1; }
+      .btn, .waBtn, nav a, .panel{ transition:none; }
+      .waBtn:after{ animation:none; }
+    }
+  </style>
+
+  <!-- Schema: ContactPage + LodgingBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ContactPage",
+    "name":"Contact & Booking | Beach View Stays",
+    "url":"https://beachviewstays.pk/contact"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LodgingBusiness",
+    "name":"Beach View Stays",
+    "url":"https://beachviewstays.pk/",
+    "telephone":"+923068230101",
+    "email":"karachi.apartments@gmail.com",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"DHA",
+      "addressRegion":"Karachi",
+      "addressCountry":"PK"
+    },
+    "numberOfRooms":"5"
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="/" aria-label="Beach View Stays Home">
+          <div class="logoMark" aria-hidden="true"></div>
+          <div>
+            <strong>Beach View Stays</strong>
+            <span>Relax. Stay. Enjoy the View.</span>
+          </div>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/facilities">Facilities</a></li>
+            <li><a href="/contact" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="navRight">
+          <a class="btn btnOutline" href="/contact" aria-label="Check availability">Check Availability</a>
+          <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 7h16v2H4zm0 8h16v2H4zm0-4h16v2H4z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobilePanel" id="mobilePanel" aria-hidden="true">
+        <div class="mobilePanelInner">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/gallery">Gallery</a>
+          <a href="/facilities">Facilities</a>
+          <a href="/contact" aria-current="page">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="pageHero">
+      <div class="container">
+        <div class="heroCard reveal" data-delay="0">
+          <div class="heroInner">
+            <div class="kicker"><span class="dot" aria-hidden="true"></span> Contact & Booking</div>
+            <h1>Send your dates. We’ll confirm quickly.</h1>
+            <p class="sub">Fastest booking method: WhatsApp. Use the form below to generate a pre-filled message.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN -->
+    <section>
+      <div class="container">
+        <div class="grid">
+          <!-- Booking form -->
+          <div class="panel reveal" data-delay="0">
+            <h2>Quick booking form</h2>
+            <p>Enter details → click “Send on WhatsApp”.</p>
+
+            <form id="bookingForm" novalidate>
+              <div class="fields" aria-label="Booking fields">
+                <div class="field">
+                  <label for="checkin">Check-in</label>
+                  <input class="input" type="date" id="checkin" name="checkin" required />
+                </div>
+
+                <div class="field">
+                  <label for="checkout">Check-out</label>
+                  <input class="input" type="date" id="checkout" name="checkout" required />
+                </div>
+
+                <div class="field">
+                  <label for="guests">Guests</label>
+                  <input class="input" type="number" id="guests" name="guests" min="1" max="8" placeholder="e.g., 2" required />
+                </div>
+
+                <div class="field">
+                  <label for="rooms">Units needed</label>
+                  <select class="input" id="rooms" name="rooms" required>
+                    <option value="" selected disabled>Select</option>
+                    <option value="1">1 unit (1-bedroom)</option>
+                    <option value="2">2 units</option>
+                    <option value="3">3 units</option>
+                    <option value="4">4 units</option>
+                    <option value="5">5 units</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input class="input" type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required />
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone (optional)</label>
+                  <input class="input" type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+92..." />
+                </div>
+
+                <div class="field full">
+                  <label for="note">Message (optional)</label>
+                  <textarea class="input" id="note" name="note" placeholder="Any preference? (early check-in, etc.)"></textarea>
+                  <div class="hint">Tip: Share exact dates for fastest confirmation.</div>
+                </div>
+              </div>
+
+              <div class="actions">
+                <button class="btn btnPrimary" type="submit" id="sendBtn">Send on WhatsApp</button>
+                <button class="btn btnOutline" type="button" id="copyBtn">Copy message</button>
+              </div>
+
+              <div class="miniNote" id="status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <!-- Contact details -->
+          <aside class="panel reveal" data-delay="120">
+            <h2>Direct contact</h2>
+            <p>Prefer direct messaging? Use the options below.</p>
+
+            <div class="pillGrid" aria-label="Direct contact options">
+              <div class="pill">
+                <div class="iconBox" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20.5 3.5A11 11 0 0 0 3.7 17.7L3 21l3.4-.7A11 11 0 0 0 20.5 3.5ZM12 20a9 9 0 0 1-4.6-1.3l-.3-.2-2 .4.4-2-.2-.3A9 9 0 1 1 12 20Z"/></svg>
+                </div>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span><a href="https://wa.me/923068230101" target="_blank" rel="noopener noreferrer">+92 306 8230101</a></span>
+                </div>
+              </div>
+
+              <div class="pill">
+                <div class="iconBox" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/></svg>
+                </div>
+                <div>
+                  <strong>Email</strong>
+                  <span><a href="mailto:karachi.apartments@gmail.com">karachi.apartments@gmail.com</a></span>
+                </div>
+              </div>
+
+              <div class="pill">
+                <div class="iconBox" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+                </div>
+                <div>
+                  <strong>Location</strong>
+                  <span>DHA, Karachi • Near beach areas</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mapBox" aria-label="Map placeholder">
+              <div class="mapBadge">
+                <strong>Google Maps</strong>
+                <span>Add a real Maps link here when the pin is ready. (Avoid guessing the exact address.)</span>
+              </div>
+            </div>
+
+            <div class="ctaBand" style="margin-top:12px;">
+              <div>
+                <h3>Need fast rates?</h3>
+                <p>Send dates + guests on WhatsApp.</p>
+              </div>
+              <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                <a class="btn btnPrimary" href="https://wa.me/923068230101" target="_blank" rel="noopener noreferrer">Open WhatsApp</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footGrid">
+        <div class="foot">
+          <h4>Beach View Stays</h4>
+          <p>Premium serviced 1-bedroom apartments near the beach in DHA Karachi—comfort, privacy, and clean stays.</p>
+          <p style="margin-top:10px;">
+            <strong style="color:var(--navy);">Email:</strong> <a href="mailto:karachi.apartments@gmail.com">karachi.apartments@gmail.com</a><br/>
+            <strong style="color:var(--navy);">WhatsApp:</strong> <a href="https://wa.me/923068230101" target="_blank" rel="noopener noreferrer">+92 306 8230101</a>
+          </p>
+        </div>
+
+        <div class="foot">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/facilities">Facilities</a></li>
+            <li><a href="/contact" aria-current="page">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="foot">
+          <h4>Location</h4>
+          <p>DHA, Karachi, Pakistan<br/>Near beach areas • Clifton/DHA access</p>
+          <p style="margin-top:10px;">
+            Socials (placeholders):<br/>
+            <a href="#" aria-label="Facebook">Facebook</a> •
+            <a href="#" aria-label="Instagram">Instagram</a> •
+            <a href="#" aria-label="Google Maps">Maps</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="copyright">
+        © <span id="year"></span> Beach View Stays. All rights reserved. • Canonical: https://beachviewstays.pk
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <div class="waFloat" aria-label="WhatsApp quick booking">
+    <a class="waBtn" href="https://wa.me/923068230101" target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp booking">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="var(--navy)" d="M20.5 3.5A11 11 0 0 0 3.7 17.7L3 21l3.4-.7A11 11 0 0 0 20.5 3.5ZM12 20a9 9 0 0 1-4.6-1.3l-.3-.2-2 .4.4-2-.2-.3A9 9 0 1 1 12 20Zm5.2-6.7c-.3-.1-1.7-.8-2-.9s-.5-.1-.7.1-.8.9-1 .9-.4.1-.7 0a7.4 7.4 0 0 1-2.2-1.4A8.2 8.2 0 0 1 9 9.9c-.1-.3 0-.5.1-.6l.5-.6c.1-.2.1-.4 0-.6l-.9-2.1c-.1-.3-.3-.3-.5-.3h-.5c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.8 1.2 3.2 1.4 3.4 2.4 3.7 5.8 5.2c.8.3 1.4.5 1.9.6.8.2 1.6.2 2.2.1.7-.1 1.7-.7 1.9-1.4s.2-1.3.1-1.4c0-.2-.3-.3-.6-.4Z"/>
+      </svg>
+    </a>
+    <div class="waBubble">Book on WhatsApp</div>
+  </div>
+
+  <script>
+    (function(){
+      // Year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Mobile menu
+      const btn = document.getElementById('menuBtn');
+      const panel = document.getElementById('mobilePanel');
+      if(btn && panel){
+        panel.classList.remove('open');
+
+        const close = () => {
+          btn.setAttribute('aria-expanded','false');
+          panel.classList.remove('open');
+          panel.setAttribute('aria-hidden','true');
+        };
+
+        btn.addEventListener('click', () => {
+          const open = panel.classList.contains('open');
+          if(open){ close(); }
+          else{
+            btn.setAttribute('aria-expanded','true');
+            panel.classList.add('open');
+            panel.setAttribute('aria-hidden','false');
+          }
+        });
+
+        document.addEventListener('click', (e) => {
+          if(!panel.classList.contains('open')) return;
+          const within = panel.contains(e.target) || btn.contains(e.target);
+          if(!within) close();
+        });
+
+        window.addEventListener('resize', () => {
+          if(window.innerWidth > 860) close();
+        });
+      }
+
+      // Reveal
+      const els = Array.from(document.querySelectorAll('.reveal'));
+      if(reduce){
+        els.forEach(el => el.classList.add('in'));
+      } else {
+        els.forEach(el => {
+          const d = el.getAttribute('data-delay');
+          if(d) el.style.transitionDelay = (parseInt(d,10) || 0) + 'ms';
+        });
+
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if(entry.isIntersecting){
+              entry.target.classList.add('in');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+
+        els.forEach(el => io.observe(el));
+      }
+
+      // Booking form -> WhatsApp prefilled
+      const form = document.getElementById('bookingForm');
+      const status = document.getElementById('status');
+      const copyBtn = document.getElementById('copyBtn');
+      const sendBtn = document.getElementById('sendBtn');
+
+      const pad2 = (n) => String(n).padStart(2, '0');
+      const fmtDate = (val) => {
+        // input[type=date] gives YYYY-MM-DD
+        if(!val) return "";
+        const [y,m,d] = val.split('-');
+        if(!y || !m || !d) return val;
+        return `${d}-${m}-${y}`;
+      };
+
+      const buildMessage = () => {
+        const checkin = document.getElementById('checkin').value;
+        const checkout = document.getElementById('checkout').value;
+        const guests = document.getElementById('guests').value.trim();
+        const rooms = document.getElementById('rooms').value;
+        const name = document.getElementById('name').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const note = document.getElementById('note').value.trim();
+
+        const parts = [];
+        parts.push("Hello Beach View Stays, I’d like to check availability.");
+        parts.push("");
+        parts.push(`Name: ${name || "-"}`);
+        if(phone) parts.push(`Phone: ${phone}`);
+        parts.push(`Check-in: ${fmtDate(checkin) || "-"}`);
+        parts.push(`Check-out: ${fmtDate(checkout) || "-"}`);
+        parts.push(`Guests: ${guests || "-"}`);
+        parts.push(`Units needed: ${rooms || "-"}`);
+        if(note) {
+          parts.push("");
+          parts.push(`Note: ${note}`);
+        }
+        parts.push("");
+        parts.push("Please share rates and confirmation steps. Thank you.");
+
+        return parts.join("\n");
+      };
+
+      const validDates = (cin, cout) => {
+        if(!cin || !cout) return true; // required validation handled elsewhere
+        const a = new Date(cin + "T00:00:00");
+        const b = new Date(cout + "T00:00:00");
+        return b > a;
+      };
+
+      const showStatus = (msg, ok=true) => {
+        status.textContent = msg;
+        status.style.color = ok ? "rgba(71,84,103,.95)" : "rgba(153,27,27,.95)";
+      };
+
+      const required = (id, label) => {
+        const el = document.getElementById(id);
+        if(!el.value || !String(el.value).trim()){
+          el.focus();
+          showStatus(`Please enter ${label}.`, false);
+          return false;
+        }
+        return true;
+      };
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        if(!required('checkin','check-in date')) return;
+        if(!required('checkout','check-out date')) return;
+        if(!required('guests','number of guests')) return;
+        if(!required('rooms','units needed')) return;
+        if(!required('name','your name')) return;
+
+        const cin = document.getElementById('checkin').value;
+        const cout = document.getElementById('checkout').value;
+        if(!validDates(cin, cout)){
+          document.getElementById('checkout').focus();
+          showStatus("Check-out must be after check-in.", false);
+          return;
+        }
+
+        const msg = buildMessage();
+        const phone = "923068230101";
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+
+        showStatus("Opening WhatsApp with your details…");
+        // open in new tab/window
+        window.open(url, "_blank", "noopener,noreferrer");
+      });
+
+      copyBtn.addEventListener('click', async () => {
+        // basic required fields not mandatory for copying, but encourage
+        const msg = buildMessage();
+        try{
+          await navigator.clipboard.writeText(msg);
+          showStatus("Message copied. Paste it in WhatsApp if needed.");
+        }catch(err){
+          // fallback
+          const ta = document.createElement('textarea');
+          ta.value = msg;
+          ta.style.position = 'fixed';
+          ta.style.left = '-9999px';
+          document.body.appendChild(ta);
+          ta.focus();
+          ta.select();
+          const ok = document.execCommand('copy');
+          document.body.removeChild(ta);
+          showStatus(ok ? "Message copied. Paste it in WhatsApp." : "Copy failed. Please select and copy manually.", ok);
+        }
+      });
+
+      // Default min date (today) for check-in; check-out min follows check-in
+      const todayISO = (() => {
+        const d = new Date();
+        const y = d.getFullYear();
+        const m = pad2(d.getMonth()+1);
+        const day = pad2(d.getDate());
+        return `${y}-${m}-${day}`;
+      })();
+
+      const checkinEl = document.getElementById('checkin');
+      const checkoutEl = document.getElementById('checkout');
+      if(checkinEl && checkoutEl){
+        checkinEl.min = todayISO;
+        checkoutEl.min = todayISO;
+
+        checkinEl.addEventListener('change', () => {
+          const cin = checkinEl.value;
+          if(cin){
+            checkoutEl.min = cin;
+            // if checkout <= checkin, clear checkout to avoid invalid
+            if(checkoutEl.value && !validDates(cin, checkoutEl.value)){
+              checkoutEl.value = "";
+            }
+          } else {
+            checkoutEl.min = todayISO;
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
